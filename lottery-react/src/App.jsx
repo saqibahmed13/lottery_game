@@ -1,14 +1,15 @@
 import Lottery from "./Lottery.jsx";
+import { sum } from "./helper.js";
 
 function App() {
-  let winCondition = (ticket) => {
+  let winConditionsKuchBhi = (ticket) => {
     return sum(ticket) === 15;
   };
 
   return (
     <>
       <div>
-        <Lottery n={4} winningSum={15} />
+        <Lottery n={3} winCondition={winConditionsKuchBhi} />
       </div>
     </>
   );
