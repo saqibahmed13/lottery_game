@@ -1,6 +1,10 @@
 import Lottery from "./Lottery.jsx";
 
 function App() {
+  let winCondition = (ticket) => {
+    return sum(ticket) === 15;
+  };
+
   return (
     <>
       <div>
