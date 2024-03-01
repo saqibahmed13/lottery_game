@@ -1,14 +1,10 @@
-import { useState } from "react";
 import Lottery from "./Lottery.jsx";
-import "./App.css";
-import Ticket from "./Ticket.jsx";
 
 function App() {
   return (
     <>
       <div>
-        {/* <Lottery /> */}
-        <Ticket ticket={[0, 1, 2]} />
+        <Lottery n={4} winningSum={15} />
       </div>
     </>
   );
